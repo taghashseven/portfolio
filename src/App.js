@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import './index.css'
+import { NavBar , HomePage } from './components';
 
 function App() {
   return (
-    <div className="App bg-blue-400">
-          Hello world
+    <div>
+      <NavBar />
+      <HomePage />
     </div>
   );
 }
