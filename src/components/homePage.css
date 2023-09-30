@@ -1,0 +1,14 @@
+
+.card {
+    @apply 
+    max-md:bg-[rgba(25,25,25,0.8)]
+    p-2 
+    rounded
+}
+
+.cardContainer {
+    @apply p-4  
+    flex  
+    items-center 
+    content-center
+}

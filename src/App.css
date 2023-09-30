@@ -1,3 +1,13 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+  @apply bg-gray-800
+}
+
+.meImg {
+  mix-blend-mode: overlay;
+  object-fit: cover;
+}
+

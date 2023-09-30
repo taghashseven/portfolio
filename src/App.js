@@ -4,7 +4,7 @@ import { NavBar , HomePage } from './components';
 
 function App() {
   return (
-    <div>
+    <div className='container mx-auto '>
       <NavBar />
       <HomePage />
     </div>
