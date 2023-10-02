@@ -1,9 +1,6 @@
 
 .card {
-    @apply 
-    max-md:bg-[rgba(25,25,25,0.8)]
-    p-2 
-    rounded
+
 }
 
 .cardContainer {
@@ -11,4 +8,9 @@
     flex  
     items-center 
     content-center
+}
+
+.imgme {
+   /* mix-blend-mode :overlay; */
+   @apply mix-blend-lighten md:mix-blend-normal
 }
