@@ -11,9 +11,11 @@
 }
 
 .imgme {
-   /* mix-blend-mode :overlay; */
-   @apply mix-blend-lighten md:mix-blend-normal
+   /* mix-blend-mode :overlay;  multiply overlay hard light*/
+   @apply mix-blend-lighten md:mix-blend-overlay
 }
+
+
 
 .title {
     overflow: hidden;
