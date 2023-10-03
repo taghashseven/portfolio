@@ -14,3 +14,45 @@
    /* mix-blend-mode :overlay; */
    @apply mix-blend-lighten md:mix-blend-normal
 }
+
+.title {
+    overflow: hidden;
+    height: 2.2rem ;
+    line-height: 2.2rem
+}
+
+.title p {
+    position: relative;
+    animation: slide 20s  steps(4) infinite;
+    top : 0; 
+}
+
+@keyframes slide {
+    100% {
+        top: -8.8rem
+    }
+}
+
+.title p::after{
+    content:  '';
+    position: absolute; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    border-left: 2px solid aqua;
+    @apply bg-gray-700;
+    animation: typing 5s steps(10) infinite;
+
+}
+
+@keyframes typing {
+    40% , 
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
