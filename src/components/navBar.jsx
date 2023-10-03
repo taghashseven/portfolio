@@ -7,7 +7,6 @@ import './navBar.css'
 
 const NavBar = ()=>{
 
-    const [isDark, setIsDark] = useState(false)
     const [isMenu, setIsMenu] = useState(false)
 
 
