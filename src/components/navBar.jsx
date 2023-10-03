@@ -3,7 +3,7 @@ import { useState } from 'react'
 import {SunIcon}   from '@heroicons/react/24/solid'
 import {MoonIcon}   from '@heroicons/react/24/solid'
 import {Bars3Icon}   from '@heroicons/react/24/solid'
-
+import './navBar.css' 
 
 const NavBar = ()=>{
 
@@ -37,7 +37,9 @@ const NavBar = ()=>{
             </div>
             {/* show menu in mobile  */}
 
-            <ul className={"gap-4 md:hidden text-white flex flex-col items-center absolute  left-0 right-0 bg-slate-600/90 z-10 py-2 "+ (isMenu  ? '' : 'hidden')}>
+            <ul className={"mobile_url gap-4 md:hidden text-white flex flex-col items-center absolute  left-0 right-0 bg-slate-600/90 z-10 py-2 "+ (isMenu  ? '' : 'hidden')}
+                onClick={()=>setIsMenu(!isMenu)}
+            >
                 <Link to = 'home' className="hover:border-b-2 border-b-purple-700">Home</Link>
                 <Link to = 'about' className="hover:border-b-2 border-b-purple-700">About</Link>
                 <Link to = 'service' className="hover:border-b-2 border-b-purple-700">Services</Link>
