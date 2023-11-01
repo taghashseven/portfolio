@@ -2,7 +2,7 @@ import React from 'react';
 
 const FreelancingPage = () => {
   return (
-    <div className="text-white p-4">
+    <div className="dark:text-white p-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-semibold mb-4">Freelancing Services</h1>
         <p className="text-lg mb-4">
