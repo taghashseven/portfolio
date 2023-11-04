@@ -26,11 +26,11 @@ const NavBar = ()=>{
                 </div>
 
                 <ul className="flex justify-between gap-4 max-md:hidden ">
-                    <Link to = 'home' className="  ">Home</Link>
-                    <Link to = 'about' className=" ">About</Link>
-                    <Link to = 'service' className=" ">Services</Link>
-                    <Link to = 'portfolio' className=" ">PortFolio</Link>
-                    <Link to = 'blog' className=" ">Blog</Link>
+                    <a href = '#home' className="  ">Home</a>
+                    <a href='#about' className=" ">About</a>
+                    <a href='#service' className=" ">Services</a>
+                    <a href='#portfolio' className=" ">PortFolio</a>
+                    <a href='#blog' className=" ">Blog</a>
                 </ul>
 
                 <div className='flex'>
