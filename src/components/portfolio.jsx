@@ -1,30 +1,8 @@
 import React from 'react';
-import PortfolioCard  from './portfolioCard.jsx'
 import Carsousel  from './Carousel.jsx';
 
 const Portfolio = () => {
 
-  const data = [
-    {
-      cat : 'software',
-      title : 'reference notes',
-      description : 'this is my blog page where i post all things i learn ',
-      img : 'assets/me.png',
-    } , 
-    {
-      cat : 'software',
-      title : 'automation',
-      description : 'all the automation projects',
-      img : 'assets/me.png',  
-
-    } ,   
-    {
-      cat : 'automation',
-      title : 'temperature controller',
-      description : 'The system controls the temperature of a room by turning on and off a fan and a heater',
-      img : 'assets/me.png',
-    }
-  ]
 
   return (
     <div className="dark:text-white p-4 bg-slate-900" id='portfolio'>
