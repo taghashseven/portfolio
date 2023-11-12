@@ -1,31 +1,16 @@
-import { useState, useEffect  , ref} from "react";
 import { ChevronLeftIcon } from "@heroicons/react/24/solid";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 
 const Carsousel = () => {
 
-        const [index, setIndex] = useState(0);
-        const [images, setImages] = useState([]);
-        
-        useEffect(() => {
-            
-        }, []);
-        
-        const handleNext = () => {
-            setIndex((prevIndex) => prevIndex + 1);
-        };
-        
-        const handlePrev = () => {
-            setIndex((prevIndex) => prevIndex - 1);
-        };
     
     return (
         <div className="bg-gray-500 max-w-[300px] min-w-full  relative h-[400px]  carousel bg-[url(../public/assets/arduino_programming.png)] rounded " >
-            <button className="absolute  left-0 bottom-0 top-0 opacity-50 hover:opacity-100 " onClick={handlePrev}>
+            <button className="absolute  left-0 bottom-0 top-0 opacity-50 hover:opacity-100 ">
                 <ChevronLeftIcon className="w-8 h-8" />
             </button>
-            <button className="absolute  right-0 bottom-0 top-0 opacity-50 hover:opacity-100" onClick={handleNext}>
+            <button className="absolute  right-0 bottom-0 top-0 opacity-50 hover:opacity-100" >
                 <ChevronRightIcon className="w-8 h-8" />
             </button>
             {/* dots */}
