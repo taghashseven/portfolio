@@ -17,9 +17,24 @@ code {
     monospace;
 }
 
-
-
 body {
   background-color:  transparent;
   
+}
+
+
+
+
+
+/* ------------------ carouse ---------------------- */
+
+.carousel {
+  /* background-image: url(../public/assets/arduino_programming.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  mix-blend-mode: multiply;
+  background-color: rgb(255, 0, 200);
+  /* image opacity */
+
 }

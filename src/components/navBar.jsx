@@ -8,14 +8,23 @@ import './navBar.css'
 const NavBar = ()=>{
 
     const [isMenu, setIsMenu] = useState(false)
+    
+    // dark save in local storage
+    const [isDark, setIsDark] = useState(localStorage.getItem('isDark') === 'true' ? true : false)
+    if(isDark)
+        document.documentElement.classList.add('dark')
 
-    // dark 
-    const [isDark, setIsDark] = useState(document.documentElement.classList.contains('dark'))
-
-    // toggle dark mode
     const toggleDarkMode = ()=>{
-        document.documentElement.classList.toggle('dark')
-        setIsDark(!isDark)
+        if(isDark){
+            document.documentElement.classList.remove('dark')
+            setIsDark(false)
+        }
+        else{
+            document.documentElement.classList.add('dark')
+            setIsDark(true)
+        }
+        localStorage.setItem('isDark', isDark)
+        console.log('pressed')
     }
 
     return (
