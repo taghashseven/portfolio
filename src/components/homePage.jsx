@@ -7,7 +7,6 @@ const HomePage = ()=>{
 
     const [title, setTitle] = useState(' ')
 
-
     return (
         <div className="py-20 md:py-52 card relative  overflow-hidden p-4 pr-8" id='home'>
             <img src='assets/me.png' alt='me' className='absolute top-0 z-[-1] imgme' />
@@ -24,21 +23,21 @@ const HomePage = ()=>{
                 onInit={(typewriter) => {
                     typewriter.typeString('Web developer')
                     .callFunction(() => {
-                        setTitle('i love web development')
+                        setTitle('Building responsive websites')
                     })
                     .pauseFor(2500)
                     .deleteAll()
                     .callFunction(()=> setTitle(''))
                     .typeString('Network engineer')
                     .callFunction(() => {
-                        setTitle('Keep you securly connected')
+                        setTitle('Unbreakable bonds, keeping you securely connected')
                     })
                     .pauseFor(2500)
                     .deleteAll()
                     .callFunction(()=> setTitle(''))
                     .typeString('Automation and Embedded Systems')
                     .callFunction(()=>{
-                        setTitle('realiasation of the hardware')
+                        setTitle('Realiasation of the hardware')
                     })
                     .pauseFor(4500)
                     .callFunction(()=> setTitle(''))
